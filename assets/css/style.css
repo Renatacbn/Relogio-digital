@@ -5,46 +5,62 @@
     padding: 0;
     font-family: open-sans, sans-serif;
 }
-
+/*  Estilizando o corpo da página */ 
 body {
+    /* Definindo a altura da página como 100% da altura da visualização (viewport height) */
     height: 100vh;
+    /* Criando um plano de fundo gradiente linear com duas cores */
     background: linear-gradient(120deg,#EE518A, #9A5CD0);
+    /* Centralizando o conteúdo vertical e horizontalmente */
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-
+/* Estilizando o bloco do relógio */
 .relogio {
+    /* Criando um layout flexível com alinhamento central e espaço uniformemente distribuído */
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* Definindo altura e largura do bloco do relógio */
     height: 200px;
     width: 550px;
+    /* Configurando o plano de fundo transparente */
     background: transparent;
+    /* Adicionando bordas arredondadas ao bloco do relógio */
     border-radius: 3px;
+    /* Adicionando uma sombra para criar profundidade */
     box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
 }
-
+/* Estilizando as divisões internas do bloco do relógio */
 .relogio div{
+    /* Definindo altura e largura das divisões internas */
     height: 170px;
     width: 150px;
+    /* Criando um layout flexível com alinhamento central e espaço uniformemente distribuído em coluna */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* Configurando a cor do texto e do plano de fundo com transparência */
     color: #fff;
     background: rgba(5, 5, 5, .9);
+    /* Adicionando uma sombra à caixa interna */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    /* Adicionando bordas arredondadas à caixa interna */
     border-radius: 7px;
+    /* Ajustando o espaçamento entre as letras */
     letter-spacing: 3px;
 }
-
+/* Estilizando o elemento <span> dentro do bloco do relógio */
 .relogio span{
+    /* Definindo a aparência do texto, tornando-o negrito e ajustando o tamanho da fonte */
     font-weight: bolder;
     font-size: 60px;
 }
-
+/* Estilizando o elemento <span> com classe 'tempo' dentro do bloco do relógio */
 .relogio span.tempo{
+    /* Ajustando o tamanho da fonte para o elemento <span> com classe 'tempo' */
     font-size: 10px;
 }
